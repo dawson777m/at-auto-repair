@@ -153,6 +153,7 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.02em;
 }
 .main-nav a:hover { color: var(--amber); }
+.main-nav a.active { color: var(--amber); }
 
 .header-cta { white-space: nowrap; padding: 10px 20px; }
 
@@ -293,6 +294,63 @@ a { text-decoration: none; color: inherit; }
 /* Used cars */
 .used-cars-inner { max-width: 700px; margin: 0 auto; }
 
+/* Page hero (sub-pages) */
+.page-hero {
+  background: linear-gradient(160deg, rgba(16,17,18,0.94) 0%, rgba(27,29,31,0.9) 55%, rgba(201,114,15,0.5) 130%);
+  padding: 64px 0;
+  color: var(--white);
+}
+.page-hero h1 { color: var(--white); font-size: 2.4rem; margin-bottom: 0.4em; }
+.page-hero-sub { color: #d4d6d9; max-width: 620px; margin: 0; text-transform: none; }
+.breadcrumb { color: var(--amber-light); font-size: 0.85rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+.breadcrumb a { color: var(--amber-light); text-decoration: underline; }
+
+/* Service categories (services page) */
+.service-category { margin-bottom: 56px; }
+.service-category:last-child { margin-bottom: 0; }
+.service-category h2 { font-size: 1.6rem; }
+.service-category > .section-sub { margin: 0 0 24px; max-width: none; text-transform: none; }
+
+/* Location / map */
+.location-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: stretch;
+}
+.location-text .contact-list { margin: 20px 0 28px; }
+.map-frame {
+  min-height: 320px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* Recent work / results spotlights */
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.spotlight-card {
+  background: var(--white);
+  border: 1px solid #eae8e4;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+.spotlight-tag {
+  color: var(--amber);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  margin-bottom: 0.6em;
+}
+.spotlight-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.spotlight-card p { font-size: 0.92rem; }
+.spotlight-quote { color: var(--text); font-style: italic; margin: 0; font-size: 0.88rem; }
+
 /* Reviews */
 .rating-block { max-width: 420px; margin: 0 auto 40px; text-align: center; }
 .rating-number { font-size: 2.4rem; font-weight: 800; color: var(--charcoal); margin: 8px 0 0; font-family: 'Barlow Condensed', sans-serif; }
@@ -377,6 +435,8 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; }
+  .location-inner { grid-template-columns: 1fr; }
+  .map-frame { min-height: 260px; }
   .main-nav {
     position: absolute;
     top: 100%;

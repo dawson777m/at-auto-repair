@@ -15,13 +15,14 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#top" class="logo">A&amp;T <span>Auto Repair</span></a>
+    <a href="index.html" class="logo">A&amp;T <span>Auto Repair</span></a>
     <nav class="main-nav" id="main-nav">
-      <a href="#services">Services</a>
-      <a href="#about">Meet Tam</a>
-      <a href="#used-cars">Used Cars</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#about">Meet Tam</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="index.html#location">Location</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
     <a href="tel:+15077200872" class="btn btn-primary header-cta">(507) 720-0872</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -71,24 +72,10 @@
       </div>
       <div class="service-card reveal">
         <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="14" width="26" height="20" rx="2" stroke="currentColor" stroke-width="3"/><path d="M34 20H40L42 24V30H34" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 34V37M28 34V37" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M14 22L18 26L24 19" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Engine Diagnostic</h3>
-        <p>Check-engine light or a strange noise? We'll find the real problem, fast.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6H26L25 12H19L18 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M22 12V18" stroke="currentColor" stroke-width="3"/><path d="M10 18H34C34 30 30 40 22 40C14 40 10 30 10 18Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
         </div>
         <h3>Oil Change</h3>
         <p>Quick, affordable oil changes — usually in and out in about 15 minutes.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 6C24 6 14 16 14 25C14 30.5 18.5 35 24 35C29.5 35 34 30.5 34 25C34 16 24 6 24 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 40H30M24 35V40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
-        </div>
-        <h3>A/C Installation &amp; Repair</h3>
-        <p>Stay cool all summer with reliable A/C diagnosis, repair, and recharge.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">
@@ -97,13 +84,9 @@
         <h3>Engine Repair</h3>
         <p>From belts and pumps to full engine work, handled by an experienced mechanic.</p>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 26L11 15H37L40 26" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><rect x="8" y="26" width="32" height="10" rx="2" stroke="currentColor" stroke-width="3"/><circle cx="15" cy="36" r="3" stroke="currentColor" stroke-width="3"/><circle cx="33" cy="36" r="3" stroke="currentColor" stroke-width="3"/></svg>
-        </div>
-        <h3>General Repairs &amp; Maintenance</h3>
-        <p>Belts, alternators, water pumps, suspension, and everyday maintenance — all in one shop.</p>
-      </div>
+    </div>
+    <div class="center reveal" style="margin-top: 40px;">
+      <a href="services.html" class="btn btn-primary">View All Services</a>
     </div>
   </div>
 </section>
@@ -157,7 +140,30 @@
   </div>
 </section>
 
-<section class="section" id="reviews">
+<section class="section" id="location">
+  <div class="container location-inner">
+    <div class="location-text reveal">
+      <p class="eyebrow">Find Us</p>
+      <h2>Visit Our Mankato Shop</h2>
+      <p>Look for us on the riverfront near the Madison Avenue intersection — between the car wash and the gas station on E. Vine St. Walk-ins are always welcome.</p>
+      <ul class="contact-list">
+        <li><strong>Address:</strong> 104 E. Vine St, Mankato, MN</li>
+        <li><strong>Phone:</strong> <a href="tel:+15077200872">(507) 720-0872</a></li>
+      </ul>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=104+E+Vine+St+Mankato+MN" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+    </div>
+    <div class="map-frame reveal">
+      <iframe
+        src="https://www.google.com/maps?q=104+E+Vine+St+Mankato+MN&output=embed"
+        width="100%" height="100%" style="border:0;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="A & T Auto Repair location map">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
   <div class="container">
     <p class="eyebrow center reveal">Client Feedback</p>
     <h2 class="center reveal">142 Reviews, 4.6 Stars</h2>
@@ -182,24 +188,9 @@
         <p>"I brought my 1970s Mercury in for a muffler — he made an exhaust pipe that fit perfectly. Top notch work."</p>
         <p class="testimonial-source">Steve Z. &middot; Google Review</p>
       </div>
-      <div class="testimonial-card reveal">
-        <span class="stars small" aria-label="5 out of 5 stars">★★★★★</span>
-        <p>"The most friendly and honest auto mechanic I've ever known, with exceptionally fair prices."</p>
-        <p class="testimonial-source">Kevin J. &middot; Google Review</p>
-      </div>
-      <div class="testimonial-card reveal">
-        <span class="stars small" aria-label="5 out of 5 stars">★★★★★</span>
-        <p>"Quickest and cheapest oil change in town. I usually roll up and he waves me right into the garage."</p>
-        <p class="testimonial-source">Nick D. &middot; Google Review</p>
-      </div>
-      <div class="testimonial-card reveal">
-        <span class="stars small" aria-label="5 out of 5 stars">★★★★★</span>
-        <p>"Been visiting A&amp;T since 2017. Very honest and fair. Best auto shop in town."</p>
-        <p class="testimonial-source">Seung Woo K. &middot; Google Review</p>
-      </div>
     </div>
     <div class="center reveal" style="margin-top: 40px;">
-      <a href="https://www.google.com/search?q=A%26T+Auto+Repair+Mankato" target="_blank" rel="noopener" class="btn btn-outline">Read All Reviews on Google</a>
+      <a href="reviews.html" class="btn btn-outline">Read More Reviews</a>
     </div>
   </div>
 </section>
@@ -235,10 +226,11 @@
       <p>Auto Repair &amp; Used Car Sales &middot; Mankato, MN</p>
     </div>
     <div class="footer-links">
-      <a href="#services">Services</a>
-      <a href="#about">Meet Tam</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="index.html#location">Location</a>
+      <a href="index.html#contact">Contact</a>
     </div>
     <p class="footer-copy">&copy; <span id="year"></span> A &amp; T Auto Repair and Used Car Sales. All rights reserved.</p>
   </div>
